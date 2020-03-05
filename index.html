@@ -10,33 +10,102 @@
       integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css"
+    />
   </head>
   <body>
     <header id="header">
-      <h1 id="title">かめのポートフォリオ</h1>
-      <div class="pure-menu pure-menu-horizontal">
-        <a href="#" class="pure-menu-heading pure-menu-link">BRAND</a>
-        <ul class="pure-menu-list">
-          <li class="pure-menu-item header-menu-item">
-            <a href="#" class="pure-menu-link">News</a>
-          </li>
-          <li class="pure-menu-item header-menu-item">
-            <a href="#" class="pure-menu-link">Sports</a>
-          </li>
-          <li class="pure-menu-item header-menu-item">
-            <a href="#" class="pure-menu-link">Finance</a>
-          </li>
-        </ul>
-      </div>
+      <h1 id="title">亀読記</h1>
+      <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li>
+              <a href="#">Parent</a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-active"><a href="#">Active</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Item</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <div class="pure-g">
-      <div class="pure-u-4-5">
-        <p>ほげほげ</p>
+
+    <div uk-grid>
+      <div class="uk-width-4-5  uk-padding">
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+          uk-grid
+        >
+          <div class="uk-card-media-left uk-cover-container">
+            <a
+              href="https://www.amazon.co.jp/%E3%82%BF%E3%83%BC%E3%83%98%E3%83%AB%E3%83%BB%E3%82%A2%E3%83%8A%E3%83%88%E3%83%9F%E3%82%A2%E3%81%A8%E8%A7%A3%E4%BD%93%E6%96%B0%E6%9B%B8-%E3%82%AF%E3%83%AB%E3%83%A0%E3%82%B9/dp/4930689465"
+            >
+              <img src="data/ta-heruanatomia.jpeg" alt="" uk-cover />
+              <canvas width="600" height="400"></canvas>
+            </a>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <a
+                class="uk-link-heading"
+                href="https://www.amazon.co.jp/%E3%82%BF%E3%83%BC%E3%83%98%E3%83%AB%E3%83%BB%E3%82%A2%E3%83%8A%E3%83%88%E3%83%9F%E3%82%A2%E3%81%A8%E8%A7%A3%E4%BD%93%E6%96%B0%E6%9B%B8-%E3%82%AF%E3%83%AB%E3%83%A0%E3%82%B9/dp/4930689465"
+              >
+                <h3 class="uk-card-title">Anatomische Tabellen</h3>
+              </a>
+              <p>
+                ドイツ人クルムスが初心者向けに著した「解剖図譜」（Anatomische
+                Tabellen）のオランダ語訳（Ontleedkundige
+                Tafelen）の日本での通称。前野良沢・杉田玄白らによる「解体新書」の原著。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+          uk-grid
+        >
+          <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <a
+              href="https://www.amazon.co.jp/Tobii-Eye-Tracker-Gaming-Peripheral/dp/B01MAWPMXQ"
+            >
+              <img src="data/splitKeyboard2.jpg" alt="" uk-cover />
+              <canvas width="600" height="400"></canvas>
+            </a>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <a
+                class="uk-link-heading"
+                href="https://www.amazon.co.jp/Tobii-Eye-Tracker-Gaming-Peripheral/dp/B01MAWPMXQ"
+              >
+                <h3 class="uk-card-title">
+                  the Experiment with Tobii EyeX
+                </h3>
+              </a>
+              <p>
+                I conducted the experiment with Tobii EyeX which device is one
+                of powerfull eye tracking tool.
+                <br />
+                Check it!!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="pure-u-1-5">
+      <div class="uk-width-1-5">
         <p>Thirds</p>
       </div>
     </div>
-    <p>概要</p>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
   </body>
 </html>
